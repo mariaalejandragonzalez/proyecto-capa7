@@ -12,7 +12,7 @@ Sitio web en HTML para la actividad práctica de internet: Redes y comunicacione
 1. Clonar el repositorio:
    ```
    git clone https://github.com/mariaalejandragonzalez/proyecto-capa7.git
-   cd NOMBRE_REPO
+   cd proyecto-capa7
    ```
 2. Construir la imagen:
    ```
