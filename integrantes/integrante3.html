@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julián Fernando Álvarez</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body class="pagina-perfil">
+
+  <main class="perfil-contenedor">
+
+    <!-- ENCABEZADO -->
+    <header class="perfil-header">
+      <div class="perfil-avatar">JA</div>
+
+      <div class="etiqueta">INTEGRANTE DEL EQUIPO</div>
+
+      <h1>Julián Fernando Álvarez</h1>
+
+      <p class="descripcion">
+        Actividad práctica de Redes de Computadores
+      </p>
+    </header>
+
+    <!-- BIOGRAFÍA -->
+    <section class="perfil-seccion">
+      <h2>Sobre mí</h2>
+
+      <div class="perfil-card">
+        <p>
+          Soy Julián Fernando Álvarez, estudiante
+          interesado en el funcionamiento de las redes
+          de computadores y en la manera en que los
+          dispositivos se comunican entre sí.
+        </p>
+
+        <p>
+          Durante el curso he trabajado con diferentes
+          conceptos relacionados con el modelo OSI,
+          el direccionamiento IP, los switches,
+          los routers y la configuración de redes
+          mediante Cisco Packet Tracer.
+        </p>
+      </div>
+    </section>
+
+    <!-- APRENDIZAJES -->
+    <section class="perfil-seccion">
+
+      <h2>Lo que aprendí en el curso</h2>
+
+      <p class="perfil-subtitulo">
+        Durante las actividades prácticas se trabajó
+        con diferentes topologías de red, utilizando
+        switches, routers y computadores.
+      </p>
+
+      <!-- TEMA 1 -->
+      <article class="perfil-card">
+
+        <div class="tema-numero">
+          01 / REDES DE ÁREA LOCAL
+        </div>
+
+        <h3>
+          Configuración de una red LAN con switches
+        </h3>
+
+        <p>
+          Una red LAN (Local Area Network) permite
+          conectar diferentes dispositivos dentro
+          de un área limitada, como una oficina,
+          un laboratorio o una institución educativa.
+        </p>
+
+        <p>
+          En esta práctica se diseñó una topología
+          de red utilizando Cisco Packet Tracer,
+          en la cual varios computadores se encuentran
+          conectados a un switch central.
+        </p>
+
+        <p>
+          El switch permite que los dispositivos
+          conectados intercambien información
+          dentro de una misma red local,
+          utilizando las direcciones MAC
+          para reenviar las tramas.
+        </p>
+
+        <div class="osi-imagen">
+          <img
+            src="../img/ImagenJ1.png"
+            alt="Topología LAN con switch central y computadores"
+          >
+        </div>
+
+        <h3>Descripción de la topología</h3>
+
+        <p>
+          En la imagen se observa un switch Cisco
+          2960 conectado a varios computadores,
+          distribuidos visualmente en tres grupos.
+        </p>
+
+        <p>
+          Cada grupo está identificado mediante
+          un color diferente, lo que facilita
+          la organización de los equipos
+          dentro de la infraestructura.
+        </p>
+
+        <p>
+          Todos los computadores visibles están
+          conectados al mismo switch central.
+          Esta distribución corresponde a una
+          topología física en estrella.
+        </p>
+
+        <h3>Conceptos aprendidos</h3>
+
+        <ol class="lista-capas">
+
+          <li>
+            <strong>Red LAN</strong>
+            <p>
+              Permite conectar computadores y
+              otros dispositivos dentro de una
+              misma área local.
+            </p>
+          </li>
+
+          <li>
+            <strong>Switch</strong>
+            <p>
+              Es un dispositivo de red que
+              conecta equipos y reenvía tramas
+              según las direcciones MAC.
+            </p>
+          </li>
+
+          <li>
+            <strong>Topología en estrella</strong>
+            <p>
+              Los dispositivos se conectan a
+              un equipo central, facilitando
+              la administración de las conexiones.
+            </p>
+          </li>
+
+          <li>
+            <strong>Segmentación de redes</strong>
+            <p>
+              Los equipos pueden organizarse
+              en diferentes grupos o redes
+              lógicas mediante VLAN,
+              siempre que estas se configuren.
+            </p>
+          </li>
+
+        </ol>
+
+        <h3>Conclusiones de la práctica</h3>
+
+        <p>
+          Esta práctica permite comprender
+          la importancia del switch en una
+          red de área local y cómo una topología
+          en estrella facilita la conexión
+          de múltiples computadores.
+        </p>
+
+        <p>
+          También permite identificar que
+          la organización visual de los equipos
+          no significa necesariamente que
+          existan redes independientes.
+          Para separar los grupos en diferentes
+          redes lógicas sería necesario
+          configurar VLAN.
+        </p>
+
+        <p>
+          Finalmente, se comprende que una
+          infraestructura bien organizada
+          facilita la identificación de
+          dispositivos y la administración
+          de la red.
+        </p>
+
+      </article>
+
+      <!-- TEMA 2 -->
+      <article class="perfil-card">
+
+        <div class="tema-numero">
+          02 / ENRUTAMIENTO ENTRE REDES
+        </div>
+
+        <h3>
+          Interconexión de redes mediante routers
+        </h3>
+
+        <p>
+          Un router es un dispositivo encargado
+          de conectar diferentes redes y
+          determinar por dónde deben viajar
+          los paquetes para llegar a su destino.
+        </p>
+
+        <p>
+          En esta práctica se diseñó una
+          infraestructura utilizando tres routers,
+          tres switches y cuatro computadores,
+          mediante Cisco Packet Tracer.
+        </p>
+
+        <p>
+          Los routers se encuentran conectados
+          entre sí, mientras que cada uno
+          proporciona conexión a una red local
+          a través de un switch.
+        </p>
+
+        <div class="osi-imagen">
+          <img
+            src="../img/ImagenJ2.png"
+            alt="Topología con tres routers y tres redes locales"
+          >
+        </div>
+
+        <h3>Descripción de la topología</h3>
+
+        <p>
+          En la imagen se observan tres routers
+          conectados en una estructura lineal.
+          Cada router está conectado a un switch
+          Cisco 2960.
+        </p>
+
+        <p>
+          El primer switch conecta un computador,
+          el segundo switch conecta otro computador
+          y el tercer switch conecta dos computadores.
+        </p>
+
+        <p>
+          Esta estructura permite representar
+          diferentes redes locales que pueden
+          comunicarse entre sí mediante routers,
+          siempre que el direccionamiento y
+          las rutas estén correctamente configurados.
+        </p>
+
+        <h3>Conceptos aprendidos</h3>
+
+        <ol class="lista-capas">
+
+          <li>
+            <strong>Router</strong>
+            <p>
+              Dispositivo que conecta redes
+              diferentes y permite el
+              encaminamiento de paquetes IP.
+            </p>
+          </li>
+
+          <li>
+            <strong>Direccionamiento IP</strong>
+            <p>
+              Permite identificar dispositivos
+              e interfaces dentro de una red,
+              utilizando direcciones IP
+              y máscaras de subred.
+            </p>
+          </li>
+
+          <li>
+            <strong>Puerta de enlace</strong>
+            <p>
+              Es la dirección del router
+              utilizada por los computadores
+              para enviar paquetes hacia
+              otras redes.
+            </p>
+          </li>
+
+          <li>
+            <strong>Enrutamiento</strong>
+            <p>
+              Permite determinar las rutas
+              que deben seguir los paquetes
+              para llegar a redes remotas.
+            </p>
+          </li>
+
+          <li>
+            <strong>Pruebas de conectividad</strong>
+            <p>
+              Herramientas como ping permiten
+              verificar si existe comunicación
+              IP entre diferentes dispositivos.
+            </p>
+          </li>
+
+        </ol>
+
+        <h3>Conclusiones de la práctica</h3>
+
+        <p>
+          Esta práctica permite comprender
+          la diferencia entre un switch y un
+          router. Mientras el switch conecta
+          dispositivos dentro de una red local,
+          el router permite la comunicación
+          entre redes diferentes.
+        </p>
+
+        <p>
+          También se identifica la importancia
+          de configurar correctamente las
+          direcciones IP, las máscaras de subred,
+          las puertas de enlace y las rutas
+          de los routers.
+        </p>
+
+        <p>
+          La topología muestra cómo varias
+          redes pueden interconectarse mediante
+          dispositivos de enrutamiento.
+          Sin embargo, para comprobar que
+          la comunicación funciona correctamente,
+          es necesario realizar pruebas
+          de conectividad.
+        </p>
+
+      </article>
+
+      <!-- TEMA 3 -->
+      <article class="perfil-card">
+
+        <div class="tema-numero">
+          03 / CONCLUSIONES GENERALES
+        </div>
+
+        <h3>
+          ¿Qué aprendí de estas actividades?
+        </h3>
+
+        <p>
+          Las prácticas realizadas en Cisco
+          Packet Tracer permitieron comprender
+          mejor cómo se construyen y organizan
+          las redes de computadores.
+        </p>
+
+        <p>
+          Aprendí que los switches y los routers
+          cumplen funciones diferentes,
+          pero ambos son fundamentales
+          para permitir la comunicación
+          entre dispositivos.
+        </p>
+
+        <p>
+          También comprendí que el modelo OSI
+          permite explicar el funcionamiento
+          de las redes mediante diferentes
+          capas, especialmente la capa
+          de enlace de datos y la capa de red.
+        </p>
+
+        <p>
+          Finalmente, estas actividades
+          permiten relacionar los conceptos
+          teóricos con situaciones prácticas,
+          facilitando la comprensión del
+          direccionamiento IP, las topologías
+          y la interconexión de redes.
+        </p>
+
+      </article>
+
+    </section>
+
+    <!-- BOTÓN DE REGRESO -->
+    <a href="../index.html" class="perfil-volver">
+      ← Volver al inicio
+    </a>
+
+  </main>
+
+  <footer>
+    Actividad práctica | Capa 7 - Modelo OSI
+  </footer>
+
+</body>
+</html>

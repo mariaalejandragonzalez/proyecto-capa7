@@ -1,64 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>María Alejandra González Cortés</title>
   <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-  <h1>María Alejandra González Cortés</h1>
+<body class="pagina-perfil">
 
-  <h2>Biografía</h2>
-  <p>
-    Soy Alejandra González, tengo 22 años y soy de la ciudad de Ibagué.
-    Me encuentro cursando octavo semestre de Ingeniería de Sistemas y quinto
-    semestre de Ingeniería Industrial en la Universidad de Ibagué. Mi animal
-    favorito es el gato, tengo uno llamado Michi y una llamada Molly.
-    Me gusta mucho leer libros, ver películas y series. Mi serie favorita
-    es Stranger Things.
-  </p>
+  <main class="perfil-contenedor">
 
-  <h2>Lo que aprendí en el curso</h2>
-  
-
-  <ul>
-    <li>Qué es el modelo OSI y sus 7 capas
-      <p>
-        El modelo OSI es un modelo que sirve para entender cómo se comunican
-        los dispositivos entre sí a través de una red. Está dividido en 7 capas
-        y cada una cumple una función diferente para que la información pueda
-        viajar desde un dispositivo hasta otro.
+    <header class="perfil-header">
+      <div class="perfil-avatar">AG</div>
+      <div class="etiqueta">INTEGRANTE DEL EQUIPO</div>
+      <h1>María Alejandra González Cortés</h1>
+      <p class="descripcion">
+        Estudiante de Ingeniería de Sistemas e Ingeniería Industrial
       </p>
-      <ol>
-        <li>Física: es la encargada de transmitir los bits por medios físicos, como cables, fibra óptica o señales inalámbricas.</li>
-        <li>Enlace de datos: envía los datos entre dispositivos que están conectados a la misma red. Trabaja con direcciones MAC.</li>
-        <li>Red: busca la ruta que deben seguir los datos para llegar a su destino y utiliza direcciones IP.</li>
-        <li>Transporte: se encarga de que los datos lleguen correctamente al destino. También los divide en segmentos y controla que lleguen completos.</li>
-        <li>Sesión: inicializa, mantiene y finaliza la comunicación entre dispositivos.</li>
-        <li>Presentación: organiza y transforma los datos para que el dispositivo que los recibe pueda entenderlos.</li>
-        <li>Aplicación: es la capa con la que interactúan los programas que usamos, como el navegador, el correo o WhatsApp.</li>
-      </ol>
-    </li>
-    <img src="../img/modelo-osi.jpg.webp" alt="Diagrama del modelo OSI" width="400">
-    <li>Qué es IPv4
-      <p>
-        Es un protocolo que se encarga de identificar los dispositivos que están
-        conectados a una red mediante una dirección IP. Su función es permitir
-        que los datos puedan viajar de un dispositivo a otro y llegar al
-        destino correcto.
-      </p>
-    </li>
+    </header>
 
-    <li>Cómo funciona HTTP en la capa 7
-      <p>
-        HTTP es un protocolo de la capa de Aplicación que permite la comunicación
-        entre un navegador y un servidor. Funciona mediante solicitudes y
-        respuestas: el navegador pide información y el servidor se encarga de
-        enviársela para que se pueda ver la página web.
-      </p>
-    </li>
-  </ul>
+    <section class="perfil-seccion">
+      <h2>Sobre mí</h2>
+      <div class="perfil-card">
+        <p>
+          Soy Alejandra González, tengo 22 años y soy de la
+          ciudad de Ibagué. Me encuentro cursando octavo
+          semestre de Ingeniería de Sistemas y quinto
+          semestre de Ingeniería Industrial en la
+          Universidad de Ibagué.
+        </p>
+        <p>
+          Mi animal favorito es el gato, tengo uno llamado
+          Michi y una llamada Molly. Me gusta mucho leer
+          libros, ver películas y series. Mi serie favorita
+          es Stranger Things.
+        </p>
+      </div>
+    </section>
 
-  <a href="../index.html">Volver al inicio</a>
+    <section class="perfil-seccion">
+      <h2>Lo que aprendí en el curso</h2>
+      <p class="perfil-subtitulo">
+        Conceptos fundamentales de redes y comunicaciones.
+      </p>
+
+      <article class="perfil-card">
+        <div class="tema-numero">01 / MODELO OSI</div>
+        <h3>¿Qué es el modelo OSI y sus 7 capas?</h3>
+
+        <p>
+          El modelo OSI es un modelo que sirve para entender
+          cómo se comunican los dispositivos entre sí a través
+          de una red. Está dividido en 7 capas y cada una
+          cumple una función diferente para que la información
+          pueda viajar desde un dispositivo hasta otro.
+        </p>
+
+        <div class="osi-imagen">
+          <img src="../img/modelo-osi.jpg.webp"
+               alt="Diagrama del modelo OSI">
+        </div>
+
+        <ol class="lista-capas">
+          <li>
+            <strong>Física</strong>
+            <p>
+              Es la encargada de transmitir los bits por
+              medios físicos, como cables, fibra óptica
+              o señales inalámbricas.
+            </p>
+          </li>
+          <li>
+            <strong>Enlace de datos</strong>
+            <p>
+              Envía los datos entre dispositivos que están
+              conectados a la misma red. Trabaja con
+              direcciones MAC.
+            </p>
+          </li>
+          <li>
+            <strong>Red</strong>
+            <p>
+              Busca la ruta que deben seguir los datos
+              para llegar a su destino y utiliza
+              direcciones IP.
+            </p>
+          </li>
+          <li>
+            <strong>Transporte</strong>
+            <p>
+              Se encarga de que los datos lleguen
+              correctamente al destino. También los divide
+              en segmentos y controla que lleguen completos.
+            </p>
+          </li>
+          <li>
+            <strong>Sesión</strong>
+            <p>
+              Inicializa, mantiene y finaliza la
+              comunicación entre dispositivos.
+            </p>
+          </li>
+          <li>
+            <strong>Presentación</strong>
+            <p>
+              Organiza y transforma los datos para que
+              el dispositivo que los recibe pueda entenderlos.
+            </p>
+          </li>
+          <li>
+            <strong>Aplicación</strong>
+            <p>
+              Es la capa con la que interactúan los
+              programas que usamos, como el navegador,
+              el correo o WhatsApp.
+            </p>
+          </li>
+        </ol>
+      </article>
+
+      <article class="perfil-card">
+        <div class="tema-numero">02 / DIRECCIONAMIENTO</div>
+        <h3>¿Qué es IPv4?</h3>
+        <p>
+          Es un protocolo que se encarga de identificar los
+          dispositivos que están conectados a una red mediante
+          una dirección IP. Su función es permitir que los
+          datos puedan viajar de un dispositivo a otro y
+          llegar al destino correcto.
+        </p>
+      </article>
+
+      <article class="perfil-card">
+        <div class="tema-numero">03 / PROTOCOLOS</div>
+        <h3>¿Cómo funciona HTTP en la capa 7?</h3>
+        <p>
+          HTTP es un protocolo de la capa de Aplicación que
+          permite la comunicación entre un navegador y un
+          servidor. Funciona mediante solicitudes y respuestas:
+          el navegador pide información y el servidor se
+          encarga de enviársela para que se pueda ver
+          la página web.
+        </p>
+      </article>
+    </section>
+
+    <a href="../index.html" class="perfil-volver">
+      ← Volver al inicio
+    </a>
+
+  </main>
+
+  <footer>
+    Actividad práctica | Capa 7 - Modelo OSI
+  </footer>
+
 </body>
 </html>

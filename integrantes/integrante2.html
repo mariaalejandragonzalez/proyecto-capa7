@@ -1,78 +1,274 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Alejandro Ruiz Vidal</title>
   <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
-  <h1>Daniel Alejandro Ruiz Vidal</h1>
 
-  <h2>Biografía</h2>
-  <p>
-    Soy Daniel Ruiz, tengo 21 años y soy de la ciudad de Ibagué.
-    Me encuentro cursando noveno semestre de Ingeniería de Sistemas en la Universidad de Ibagué.
-    Mi género musical favorito actualmente es el shoegaze. Mi banda favorita es Slowdive.
-    Me gusta bastante leer y los videojuegos. Tengo una perrita que se llama Medusa.
-  </p>
+<body class="pagina-perfil">
 
-  <h2>Lo que aprendí en el curso</h2>
-  <p>A mi parecer, los temas más importantes de los cuales aprendí fueron los siguientes:</p>
+  <main class="perfil-contenedor">
 
-  <ul>
-    <li> El modelo OSI y el modelo TCP IP
-      <p>
-        El modelo OSI es un modelo teórico de referencia que divide la comunicación 
-        de redes en 7 capas, permitiendo comprender y estandarizar cómo se transmiten los datos. 
-        Por otro lado, el modelo TCP/IP es un modelo práctico utilizado en Internet que 
-        organiza la comunicación en 4 capas. La principal diferencia es que OSI tiene 
-        una estructura más detallada y sirve como guía para entender las redes, mientras 
-        que TCP/IP se utiliza directamente para implementar la comunicación entre dispositivos.
+    <!-- ENCABEZADO -->
+    <header class="perfil-header">
+      <div class="perfil-avatar">DR</div>
 
-        OSI está compuesto por 7 capas: física, enlace de datos, red,
-        transporte, sesión, presentación y aplicación. Cada una cumple una función 
-        específica, desde la transmisión física de bits hasta la interacción con 
-        las aplicaciones. Por otro lado, TCP/IP tiene 4 capas: acceso a la red, 
-        Internet, transporte y aplicación. Estas agrupan varias funciones del modelo 
-        OSI, por ejemplo, la capa de aplicación de TCP/IP reúne las funciones de 
-        aplicación, presentación y sesión del modelo OSI. Las funciones de las capas
-        del modelo OSI son así:
+      <div class="etiqueta">INTEGRANTE DEL EQUIPO</div>
+
+      <h1>Daniel Alejandro Ruiz Vidal</h1>
+
+      <p class="descripcion">
+        Estudiante de Ingeniería de Sistemas
       </p>
-      <ol>
-        <li>Física: es la encargada de transmitir los bits por medios físicos, como cables, fibra óptica o señales inalámbricas.</li>
-        <li>Enlace de datos: envía los datos entre dispositivos que están conectados a la misma red. Trabaja con direcciones MAC.</li>
-        <li>Red: busca la ruta que deben seguir los datos para llegar a su destino y utiliza direcciones IP.</li>
-        <li>Transporte: se encarga de que los datos lleguen correctamente al destino. También los divide en segmentos y controla que lleguen completos.</li>
-        <li>Sesión: inicializa, mantiene y finaliza la comunicación entre dispositivos.</li>
-        <li>Presentación: organiza y transforma los datos para que el dispositivo que los recibe pueda entenderlos.</li>
-        <li>Aplicación: es la capa con la que interactúan los programas que usamos, como el navegador, el correo o WhatsApp.</li>
-      </ol>
-    </li>
-    <img src="../img/osi-vs-tcp-ip-models.svg" alt="Diagrama del modelo OSI" width="400">
-    <li>IPv6
-      <p>
-        IPv6 (Internet Protocol versión 6) es la versión más reciente del protocolo IP, 
-        creado para solucionar la escasez de direcciones disponibles en IPv4. Utiliza 
-        direcciones de 128 bits, lo que permite una cantidad mucho mayor de direcciones 
-        únicas. Además, ofrece mejoras en seguridad, eficiencia en el enrutamiento y 
-        configuración automática de dispositivos, facilitando la comunicación entre 
-        equipos en Internet.
-      </p>
-    </li>
-    <img src="../img/IPv6.png" alt="IPv6" width="400">
-    <li>Cómo configurar OSPF en los routers de una infraestructura
-      <p>
-        OSPFv2 y OSPFv3 son protocolos de enrutamiento dinámico que permiten a los 
-        routers encontrar las mejores rutas para transmitir datos dentro de una red. 
-        OSPFv2 trabaja principalmente con direcciones IPv4, mientras que OSPFv3 fue 
-        desarrollado para IPv6. Ambos utilizan el algoritmo SPF (Shortest Path First) 
-        para calcular las rutas más eficientes y actualizar automáticamente las 
-        tablas de enrutamiento cuando ocurre un cambio en la topología de la red.
-      </p>
-    </li>
-    <img src="../img/ospfjpg.jpg" alt="Diagrama del modelo OSI" width="400">
-  </ul>
+    </header>
 
-  <a href="../index.html">Volver al inicio</a>
+    <!-- BIOGRAFÍA -->
+    <section class="perfil-seccion">
+      <h2>Sobre mí</h2>
+
+      <div class="perfil-card">
+        <p>
+          Soy Daniel Ruiz, tengo 21 años y soy de la ciudad
+          de Ibagué. Me encuentro cursando noveno semestre
+          de Ingeniería de Sistemas en la Universidad de Ibagué.
+        </p>
+
+        <p>
+          Mi género musical favorito actualmente es el shoegaze.
+          Mi banda favorita es Slowdive.
+          Me gusta bastante leer y los videojuegos.
+          Tengo una perrita que se llama Medusa.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEMAS APRENDIDOS -->
+    <section class="perfil-seccion">
+
+      <h2>Lo que aprendí en el curso</h2>
+
+      <p class="perfil-subtitulo">
+        A mi parecer, los temas más importantes de los cuales
+        aprendí fueron los siguientes:
+      </p>
+
+      <!-- TEMA 1 -->
+      <article class="perfil-card">
+
+        <div class="tema-numero">
+          01 / MODELOS DE RED
+        </div>
+
+        <h3>El modelo OSI y el modelo TCP/IP</h3>
+
+        <p>
+          El modelo OSI es un modelo teórico de referencia
+          que divide la comunicación de redes en 7 capas,
+          permitiendo comprender y estandarizar cómo se
+          transmiten los datos.
+        </p>
+
+        <p>
+          Por otro lado, el modelo TCP/IP es un modelo
+          práctico utilizado en Internet que organiza la
+          comunicación en 4 capas.
+        </p>
+
+        <p>
+          La principal diferencia es que OSI tiene una
+          estructura más detallada y sirve como guía para
+          entender las redes, mientras que TCP/IP se utiliza
+          directamente para implementar la comunicación
+          entre dispositivos.
+        </p>
+
+        <p>
+          OSI está compuesto por 7 capas: física, enlace
+          de datos, red, transporte, sesión, presentación
+          y aplicación. Cada una cumple una función
+          específica, desde la transmisión física de bits
+          hasta la interacción con las aplicaciones.
+        </p>
+
+        <p>
+          Por otro lado, TCP/IP tiene 4 capas: acceso a
+          la red, Internet, transporte y aplicación.
+          Estas agrupan varias funciones del modelo OSI.
+          Por ejemplo, la capa de aplicación de TCP/IP
+          reúne las funciones de aplicación, presentación
+          y sesión del modelo OSI.
+        </p>
+
+        <!-- IMAGEN COMPARATIVA -->
+        <div class="osi-imagen">
+          <img
+            src="../img/osi-vs-tcp-ip-models.svg"
+            alt="Comparación entre el modelo OSI y TCP/IP"
+          >
+        </div>
+
+        <h3>Las 7 capas del modelo OSI</h3>
+
+        <ol class="lista-capas">
+
+          <li>
+            <strong>Física</strong>
+            <p>
+              Es la encargada de transmitir los bits por
+              medios físicos, como cables, fibra óptica
+              o señales inalámbricas.
+            </p>
+          </li>
+
+          <li>
+            <strong>Enlace de datos</strong>
+            <p>
+              Envía los datos entre dispositivos que están
+              conectados a la misma red. Trabaja con
+              direcciones MAC.
+            </p>
+          </li>
+
+          <li>
+            <strong>Red</strong>
+            <p>
+              Busca la ruta que deben seguir los datos
+              para llegar a su destino y utiliza
+              direcciones IP.
+            </p>
+          </li>
+
+          <li>
+            <strong>Transporte</strong>
+            <p>
+              Se encarga de que los datos lleguen
+              correctamente al destino. También los divide
+              en segmentos y controla que lleguen completos.
+            </p>
+          </li>
+
+          <li>
+            <strong>Sesión</strong>
+            <p>
+              Inicializa, mantiene y finaliza la
+              comunicación entre dispositivos.
+            </p>
+          </li>
+
+          <li>
+            <strong>Presentación</strong>
+            <p>
+              Organiza y transforma los datos para que
+              el dispositivo que los recibe pueda entenderlos.
+            </p>
+          </li>
+
+          <li>
+            <strong>Aplicación</strong>
+            <p>
+              Es la capa con la que interactúan los
+              programas que usamos, como el navegador,
+              el correo o WhatsApp.
+            </p>
+          </li>
+
+        </ol>
+      </article>
+
+      <!-- TEMA 2 -->
+      <article class="perfil-card">
+
+        <div class="tema-numero">
+          02 / DIRECCIONAMIENTO IP
+        </div>
+
+        <h3>IPv6</h3>
+
+        <p>
+          IPv6 (Internet Protocol versión 6) es la versión
+          más reciente del protocolo IP, creado para
+          solucionar la escasez de direcciones disponibles
+          en IPv4.
+        </p>
+
+        <p>
+          Utiliza direcciones de 128 bits, lo que permite
+          una cantidad mucho mayor de direcciones únicas.
+        </p>
+
+        <p>
+          Además, ofrece mejoras en seguridad, eficiencia
+          en el enrutamiento y configuración automática
+          de dispositivos, facilitando la comunicación
+          entre equipos en Internet.
+        </p>
+
+        <div class="osi-imagen">
+          <img
+            src="../img/IPv6.png"
+            alt="Diagrama sobre IPv6"
+          >
+        </div>
+
+      </article>
+
+      <!-- TEMA 3 -->
+      <article class="perfil-card">
+
+        <div class="tema-numero">
+          03 / ENRUTAMIENTO DINÁMICO
+        </div>
+
+        <h3>
+          Cómo configurar OSPF en los routers
+          de una infraestructura
+        </h3>
+
+        <p>
+          OSPFv2 y OSPFv3 son protocolos de enrutamiento
+          dinámico que permiten a los routers encontrar
+          las mejores rutas para transmitir datos
+          dentro de una red.
+        </p>
+
+        <p>
+          OSPFv2 trabaja principalmente con direcciones
+          IPv4, mientras que OSPFv3 fue desarrollado
+          para IPv6.
+        </p>
+
+        <p>
+          Ambos utilizan el algoritmo SPF
+          (Shortest Path First) para calcular las rutas
+          más eficientes y actualizar automáticamente
+          las tablas de enrutamiento cuando ocurre
+          un cambio en la topología de la red.
+        </p>
+
+        <div class="osi-imagen">
+          <img
+            src="../img/ospfjpg.jpg"
+            alt="Diagrama de enrutamiento OSPF"
+          >
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- VOLVER -->
+    <a href="../index.html" class="perfil-volver">
+      ← Volver al inicio
+    </a>
+
+  </main>
+
+  <footer>
+    Actividad práctica | Capa 7 - Modelo OSI
+  </footer>
+
 </body>
 </html>
